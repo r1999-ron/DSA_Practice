@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LargestRectangleHistogram",
+            "request": "launch",
+            "mainClass": "StackAndQueue.LargestRectangleHistogram",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "ParanthesisGenerator",
+            "request": "launch",
+            "mainClass": "StackAndQueue.ParanthesisGenerator",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "RainWaterTrapped",
+            "request": "launch",
+            "mainClass": "StackAndQueue.RainWaterTrapped",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "EvaluateExpression",
+            "request": "launch",
+            "mainClass": "StackAndQueue.EvaluateExpression",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "RotatedSortedArray",
+            "request": "launch",
+            "mainClass": "BinarySearch.RotatedSortedArray",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "RotatedArray",
+            "request": "launch",
+            "mainClass": "BinarySearch.RotatedArray",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "SearchForRange",
+            "request": "launch",
+            "mainClass": "BinarySearch.SearchForRange",
+            "projectName": "DSA_Practice_d9be6a17"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MatrixSearch",
+            "request": "launch",
+            "mainClass": "BinarySearch.MatrixSearch",
+            "projectName": "DSA_Practice_d9be6a17"
+        }
+    ]
+}
