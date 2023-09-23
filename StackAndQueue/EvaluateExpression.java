@@ -3,7 +3,7 @@ package StackAndQueue;
 import java.util.Stack;
 
 public class EvaluateExpression {
-
+/*author - Ronak Sengupta */
     public static void main(String[] args) {
 
         String[] A1 = { "2", "1", "+", "3", "*" };
