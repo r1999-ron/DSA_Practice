@@ -35,3 +35,5 @@ public class MaximumSumSubsequence {
 
     }
 }
+//TC = O(N)
+// SC = O(N)
