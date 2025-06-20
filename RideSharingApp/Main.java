@@ -28,19 +28,20 @@ public class Main {
         String requestId = uber.requestRide("R1", riderLocation, destination);
         System.out.println("Ride requested: " + requestId);
 
-        
-        // Print trip details
-        uber.getTrips().forEach(trip -> {
-            System.out.println("\nTrip Details:");
-            System.out.println("Driver: " + trip.getDriver().getName());
-            System.out.println("Distance: " + 
-                trip.getRideRequest().getPickupLocation().distanceTo(
-                    trip.getRideRequest().getDestination()) + " km");
+        String tripId = uber.acceptRide("D1", requestId);
+        System.out.println("Ride accepted. Trip ID: " + tripId);
+
+
+        uber.getTrip(tripId).ifPresent(trip -> {
+            System.out.println("Matched driver: " + trip.getDriver().getName() + 
+                             " (" + trip.getDriver().getCurrentLocation().distanceTo(riderLocation) + 
+                             " km away)");
             System.out.println("Fare: $" + trip.getFare());
         });
 
-        // Complete the trip
-        uber.completeTrip(requestId);
-        System.out.println("\nTrip completed!");
+        Payment payment = uber.processPayment(tripId);
+        System.out.println("Payment status: " + payment.getStatus());
+
+
     }
 }
