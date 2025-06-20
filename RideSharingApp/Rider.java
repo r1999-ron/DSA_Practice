@@ -5,7 +5,7 @@ class Rider extends User {
 
     public Rider(String userId, String name, String email, String phone,
             String paymentMethod, Location location) {
-        super(userId, email, name, phone, location);
+        super(userId, name, email, phone, location);
         this.paymentMethod = paymentMethod;
     }
     public String getPaymentMethod() { return paymentMethod; }

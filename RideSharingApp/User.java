@@ -2,15 +2,15 @@ package RideSharingApp;
 
 abstract class User {
     protected String userId;
-    protected String email;
     protected String name;
+    protected String email;
     protected String phone;
     protected Location currentLocation;
 
-    public User(String userId, String email, String name, String phone, Location currentLocation){
+    public User(String userId, String name, String email, String phone, Location currentLocation){
             this.userId = userId;
-            this.email = email;
             this.name = name;
+            this.email = email;
             this.phone = phone;
             this.currentLocation = currentLocation;
     }
